@@ -1,6 +1,7 @@
 variable "project_name" {
   type        = string
-  description = "Nome do projeto"
+  description = "Project name of the groundwork infra"
+  default     = "groundwork"
 }
 
 variable "role" {
