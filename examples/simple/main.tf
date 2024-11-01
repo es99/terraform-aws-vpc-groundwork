@@ -1,6 +1,6 @@
 module "vpc-groundwork" {
   source  = "es99/vpc-groundwork/aws"
-  version = "1.1.2"
+  version = "1.1.1"
 
   role = var.role
   database_subnets = var.database_subnets
