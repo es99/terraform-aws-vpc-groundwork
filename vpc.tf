@@ -6,3 +6,8 @@ resource "aws_vpc" "main" {
     Name = format("%s-vpc", var.project_name)
   }
 }
+
+resource "aws_flow_log" "vpc" {
+  traffic_type = "ALL"
+  vpc_id       = aws_vpc.main.id
+}
